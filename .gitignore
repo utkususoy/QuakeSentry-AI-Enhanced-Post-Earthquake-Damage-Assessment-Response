@@ -1,0 +1,12 @@
+App/backend/app/__pycache__/
+App/backend/app/config/__pycache__/
+App/prediction_module/__pycache__/
+App/prediction_module/classification/__pycache__/
+App/prediction_module/classification/model/
+App/prediction_module/config/__pycache__/
+App/prediction_module/ner/__pycache__/
+App/prediction_module/ner/model/
+App/prediction_module/utils/__pycache__/
+Kafka/__pycache__/
+Kafka/maras_complete_dmg_part4.csv
+Kafka/maras_complete_dmg_part5.csv
