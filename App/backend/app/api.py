@@ -53,19 +53,20 @@ async def websocket_endpoint(websocket: WebSocket):
     
     try:
        # while True:
-        async for message in consumer:
-            # print("sending...")
-            # print(message.value.decode("utf-8"))
-            message_value = message.value.decode("utf-8")
-            json_data = json.loads(message_value)
-            if json_data["geo_code"]:
-                await websocket.send_json(json_data)
+        # async for message in consumer:
+        #     # print("sending...")
+        #     # print(message.value.decode("utf-8"))
+        #     message_value = message.value.decode("utf-8")
+        #     json_data = json.loads(message_value)
+        #     if json_data["geo_code"]:
+        #         await websocket.send_json(json_data)
         
 
         # for i in payloads:
         #     if i["geo_code"]:
         #         await websocket.send_json(i)
         #         await asyncio.sleep(1)
+        pass
     except WebSocketDisconnect as e:
         print("@Errorr")
         print(e)
@@ -91,7 +92,7 @@ if __name__ == "__main__":
 @app.get("/locations")
 async def get_locations():
    payload = db_con.fetch_valid_address()
-#    payload = []
+#   payload = []
    return payload
     # return ""
 
